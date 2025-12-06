@@ -28,7 +28,7 @@ header{
     margin: auto;
     margin-top: 20px;
     /* max-width: 1000px; - Removido ou ajustado para ser mais flexível */
-    max-width: 1200px; /* Usamos porcentagem para que ele se ajuste à tela */
+    max-width: 90%; /* Usamos porcentagem para que ele se ajuste à tela */
     height: 70px;
     border-radius: 50px;
     align-items: center;
@@ -47,7 +47,6 @@ a{
     font-family: var(--fonte-padrao);
     color: var(--cor2);
     text-decoration: none;
-    font-size: 1.3em;
 }
 
 /* ESTILO DA NAVEGAÇÃO */
@@ -55,7 +54,7 @@ nav > a{
     color: var(--cor2);
     text-decoration: none;
     padding: 10px;
-    font-size: 1.3em;
+   
 }
 
 nav > a:hover{
@@ -68,18 +67,23 @@ nav{
 }
 
 h1{
+    font-family: var(--fonte-padrao);
     text-align: center;
     padding-top: 60px;
-    line-height: 1.5em;
 }
 
 
 article > h1 > span{
+    font-family: var(--fonte-padrao);
     border: 2px solid black;
     border-radius: 50px;
     padding-left: 20px;
     padding-right: 20px;
     
+}
+
+strong{
+    color: var(--cor1);
 }
 
 article > img{
@@ -89,13 +93,13 @@ article > img{
     height: 500px;
 }
 
-article > a{
-    display: inline-block;
-    background-color: var(--cor1);
+.botao{
     margin: auto;
+    width: 150px;
     padding: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
     border-radius: 50px;
-
+    background-color: var(--cor1);
+}
+div > a{
+    margin: 25px;
 }
