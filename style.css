@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* VARIÁVEIS CSS */
+:root{
+    --cor0:#474645;
+    --cor1:#F17A35;
+    --cor2:#FFFFFF;
+    --cor3:#000000;
+    --cor4:#0C4907;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --font-logo: 'bagel-fat-one', cursive;
+}
+
+/* RESET GERAL */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILO PADRÃO DO HEADER */
+header{
+    display: flex;
+    background-color: #474645;
+    margin: auto;
+    margin-top: 20px;
+    /* max-width: 1000px; - Removido ou ajustado para ser mais flexível */
+    max-width: 1200px; /* Usamos porcentagem para que ele se ajuste à tela */
+    height: 70px;
+    border-radius: 50px;
+    align-items: center;
+    padding: 0 15px; /* Adiciona um pequeno padding interno nas laterais */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+span{
+    color: var(--cor1);
+    font-family: var(--font-logo);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+a{
+    font-family: var(--fonte-padrao);
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* ESTILO DA NAVEGAÇÃO */
+nav > a{
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+nav > a:hover{
+    background-image: linear-gradient(to bottom, transparent, #F17A35);
+    color: #F17A35;
+}
+
+nav{
+    margin: auto;
+}
+
