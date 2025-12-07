@@ -19,87 +19,108 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
-/* ESTILO PADRÃO DO HEADER */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 10px;
+}
 header{
     display: flex;
-    background-color: #474645;
-    margin: auto;
-    margin-top: 20px;
-    /* max-width: 1000px; - Removido ou ajustado para ser mais flexível */
-    max-width: 90%; /* Usamos porcentagem para que ele se ajuste à tela */
-    height: 70px;
-    border-radius: 50px;
+    flex-wrap: wrap;
+    background-color: var(--cor0);
+    justify-content: center;
     align-items: center;
-    padding: 0 15px; /* Adiciona um pequeno padding interno nas laterais */
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-}
-
-header > a > span{
-    color: var(--cor1);
-    font-family: var(--font-logo);
-    font-weight: bolder;
-    padding: 10px;
-}
-
-a{
-    font-family: var(--fonte-padrao);
-    color: var(--cor2);
-    text-decoration: none;
-}
-
-/* ESTILO DA NAVEGAÇÃO */
-nav > a{
-    color: var(--cor2);
-    text-decoration: none;
-    padding: 10px;
-   
-}
-
-nav > a:hover{
-    background-image: linear-gradient(to bottom, transparent, #F17A35);
-    color: #F17A35;
-}
-
-nav{
-    margin: auto;
-}
-
-h1{
-    font-family: var(--fonte-padrao);
-    text-align: center;
-    padding-top: 60px;
-}
-
-
-article > h1 > span{
-    font-family: var(--fonte-padrao);
-    border: 2px solid black;
+    width: 80%;
+    height: 70px;
+    margin-top: 15px;
     border-radius: 50px;
+    justify-content: space-between;
+}
+header > a > span{
+    font-family: var(--fonte-logo);
+    color: var(--cor1);
+}
+header > a{
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+nav > a{
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 10px;
+}
+nav > a:hover {    
+    color: var(--cor1);
+    border-radius: 5px;
+}
+.contato > a{
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.contato a:hover{
+    color: var(--cor1);
+}
+/*Cabeçalho*/
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.3em;
+    font-family: var(--fonte-padrao);
+}
+h1 > span{
+    font-size: 25px;
+    border: 1px solid black;
     padding-left: 20px;
     padding-right: 20px;
-    
+    border-radius: 50px;
 }
 
 strong{
     color: var(--cor1);
+    font-weight: bold;
 }
-
-article > img{
-    display: block;
-    margin: auto;
-    width: 500px;
-    height: 500px;
-}
-
-.botao{
-    margin: auto;
-    width: 150px;
+img{
+    width: 400px;
+    height: 400px;
     padding: 10px;
-    border-radius: 50px;
-    background-color: var(--cor1);
 }
-div > a{
-    margin: 25px;
+p{
+    width: 400px;
+    text-align: left;
+    padding: 10px;
 }
+#img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
