@@ -81,16 +81,11 @@ nav > a:hover {
     color: var(--cor1);
 }
 /*Cabeçalho*/
-article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 h1{
     text-align: center;
     padding: 20px;
-    font-size: 2.3em;
+    font-size: 2.5em;
     font-family: var(--fonte-padrao);
 }
 h1 > span{
@@ -106,9 +101,73 @@ strong{
     font-weight: bold;
 }
 img{
-    width: 400px;
-    height: 400px;
+    width: 480px;
+    height: 480px;
     padding: 10px;
 }
 
 
+section > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+div#apresentacao{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-family: var(--fonte-padrao);
+    text-align: left;
+    width: 400px;
+    padding: 10px;
+}
+
+div#apresentacao > a{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 300px;
+    text-decoration: none;
+    color: var(--cor2);
+}
+div#prova{
+    width: 400px;
+}
+
+div#prova > p{
+    text-align: center;
+}
+
+main > section > div > div#prova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+div#icone{
+    display: flex;
+}
+
+div#icone > div > abbr > img{
+    width: 70px;
+    height: 70px;
+}
+div#icone > div{
+    box-shadow: 2px 2px 5px #f17a35b7;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    margin: 5px;
+}
+li{
+    line-height: 2em;
+    font-family: var(--fonte-padrao);
+}
