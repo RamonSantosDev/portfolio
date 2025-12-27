@@ -181,7 +181,7 @@ li{
 }
 div#linha{
     background-color: #000000;
-    width: 100vw;
+    width: 99vw;
     height: 2px;
 }
 
@@ -193,6 +193,6 @@ section.sobre{
     font-family: var(--fonte-padrao);
     flex-wrap: wrap;
     background-color: var(--cor5);
-    width: 100vw;
+    width: 99vw;
     height: 700px;
 }
