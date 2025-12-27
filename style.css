@@ -9,6 +9,7 @@
     --cor2:#FFFFFF;
     --cor3:#000000;
     --cor4:#0C4907;
+    --cor5:#e0b39873;
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
@@ -27,6 +28,7 @@ body{
     align-items:center ;
     gap: 10px;
 }
+/*Cabeçalho*/
 header{
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +68,7 @@ nav > a:hover {
     color: var(--cor1);
     border-radius: 5px;
 }
-.contato > a{
+.btcontato > a{
     font-size: 20px;
     font-family: var(--fonte-padrao);
     color: var(--cor3);
@@ -77,11 +79,11 @@ nav > a:hover {
     border-radius: 50px;
     font-weight: bold;
 }
-.contato a:hover{
+.btcontato a:hover{
     color: var(--cor1);
 }
-/*Cabeçalho*/
 
+/*seção 1*/
 h1{
     text-align: center;
     padding: 20px;
@@ -101,8 +103,8 @@ strong{
     font-weight: bold;
 }
 img{
-    width: 480px;
-    height: 480px;
+    width: 400px;
+    height: 400px;
     padding: 10px;
 }
 
@@ -146,7 +148,7 @@ div#prova > p{
     text-align: center;
 }
 
-main > section > div > div#prova{
+div#prova{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,13 +163,36 @@ div#icone > div > abbr > img{
     width: 70px;
     height: 70px;
 }
+
 div#icone > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 2px 2px 5px #f17a35b7;
     border: 1px solid var(--cor1);
     border-radius: 5px;
     margin: 5px;
+    height: 60px;
+    width: 60px;
 }
 li{
     line-height: 2em;
     font-family: var(--fonte-padrao);
+}
+div#linha{
+    background-color: #000000;
+    width: 100vw;
+    height: 2px;
+}
+
+section.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--fonte-padrao);
+    flex-wrap: wrap;
+    background-color: var(--cor5);
+    width: 100vw;
+    height: 700px;
 }
