@@ -36,10 +36,12 @@ header{
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 70px;
+    min-height: 70px;
+    height: auto;
     margin-top: 15px;
     border-radius: 50px;
     justify-content: space-between;
+    padding: 0 20px;
 }
 header > a > span{
     font-family: var(--fonte-logo);
@@ -103,8 +105,9 @@ strong{
     font-weight: bold;
 }
 img{
+    max-width: 100%;
     width: 400px;
-    height: 400px;
+    height: auto;
     padding: 10px;
 }
 
@@ -123,9 +126,12 @@ div#apresentacao{
 
 p{
     font-family: var(--fonte-padrao);
-    text-align: left;
-    width: 400px;
+    text-align: justify;
+    max-width: 400px; /* Melhor que width fixo */
+    width: 90%; /* Garante margens em telas pequenas */
     padding: 10px;
+    line-height: 1.6; /* Aumenta o respiro entre as linhas */
+    hyphens: auto;
 }
 
 div#apresentacao > a{
@@ -187,12 +193,23 @@ div#linha{
 
 section.sobre{
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     font-family: var(--fonte-padrao);
     flex-wrap: wrap;
     background-color: var(--cor5);
-    width: 99vw;
-    height: 700px;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+}
+section.sobre p {
+    width: 100%;
+    max-width: 600px; /* Limita a largura para a leitura não ficar cansativa */
+    font-size: 1.1em;
+    line-height: 1.6; /* Espaçamento entre linhas profissional */
+}
+div#icone > div:hover {
+    transform: scale(1.1); /* Dá um leve zoom */
+    transition: 0.3s;
+    background-color: var(--cor2);
 }
