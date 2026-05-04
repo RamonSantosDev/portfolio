@@ -25,7 +25,7 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
     gap: 10px;
 }
 /*Cabeçalho*/
@@ -33,14 +33,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     background-color: var(--cor0);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     min-height: 70px;
     height: auto;
     margin-top: 15px;
     border-radius: 50px;
-    justify-content: space-between;
     padding: 0 20px;
 }
 header > a > span{
@@ -105,8 +104,8 @@ strong{
     font-weight: bold;
 }
 img{
-    max-width: 100%;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: auto;
     padding: 10px;
 }
