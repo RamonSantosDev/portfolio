@@ -118,7 +118,7 @@ section > div{
     align-items: center;
     margin: 10px;
 }
-.apresentacao{
+div #apresentacao{
     display: flex;
     flex-direction: column;
     
@@ -127,14 +127,14 @@ section > div{
 p{
     font-family: var(--fonte-padrao);
     text-align: justify;
-    max-width: 425px; /* Melhor que width fixo */
+    max-width: 410px; /* Melhor que width fixo */
     width: 90%; /* Garante margens em telas pequenas */
     padding: 10px;
     line-height: 1.6; /* Aumenta o respiro entre as linhas */
     hyphens: auto;
 }
 
-.apresentacao > a{
+#apresentacao > a{
     text-align: center;
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
