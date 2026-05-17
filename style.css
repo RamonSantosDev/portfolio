@@ -13,7 +13,7 @@
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
-    --font-logo: 'bagel-fat-one', cursive;
+    --fonte-logo: 'bagel-fat-one', cursive;
 }
 
 /* RESET GERAL */
@@ -118,22 +118,23 @@ section > div{
     align-items: center;
     margin: 10px;
 }
-div#apresentacao{
+.apresentacao{
     display: flex;
     flex-direction: column;
+    
 }
 
 p{
     font-family: var(--fonte-padrao);
     text-align: justify;
-    max-width: 400px; /* Melhor que width fixo */
+    max-width: 425px; /* Melhor que width fixo */
     width: 90%; /* Garante margens em telas pequenas */
     padding: 10px;
     line-height: 1.6; /* Aumenta o respiro entre as linhas */
     hyphens: auto;
 }
 
-div#apresentacao > a{
+.apresentacao > a{
     text-align: center;
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
@@ -145,15 +146,13 @@ div#apresentacao > a{
     text-decoration: none;
     color: var(--cor2);
 }
-div#prova{
-    width: 400px;
-}
 
-div#prova > p{
+div.prova > p{
     text-align: center;
 }
 
-div#prova{
+div.prova{
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,19 +177,57 @@ div#icone > div{
     border-radius: 5px;
     margin: 5px;
     height: 60px;
-    width: 60px;
+    width: 80px;
 }
 li{
     line-height: 2em;
     font-family: var(--fonte-padrao);
 }
-div#linha{
+.container{
+    position: relative;
+    width: 100vw;
+    height: 50px;
     background-color: #000000;
-    width: 99vw;
-    height: 2px;
+    justify-content: space-between;
+}
+/*.div-de-cima{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FBBC9A;
+    background-color: #474644;
+    top: 0;
+    bottom: 0;
+    width: 100%;     
+    height: 100%; 
+    transform: rotate(1deg);   
+}*/
+.div-de-cima p{
+    max-width: 100vw;
+    margin: 0;
+}
+.div-de-baixo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    color: #FDDBC9;
+    background-color: #F17A34;
+    top: 0;
+    bottom: 0;
+    width: 100%;     
+    height: 100%; 
+    transform: rotate(-1deg); 
+}
+.div-de-baixo p{
+    max-width: 100vw;
+    margin: 0;
+    font-size: 18px;
 }
 
-section.sobre{
+
+section.sobre div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -201,7 +238,7 @@ section.sobre{
     height: auto;
     padding: 50px 20px;
 }
-section.sobre p {
+section.sobre{
     width: 100%;
     max-width: 600px; /* Limita a largura para a leitura não ficar cansativa */
     font-size: 1.1em;
