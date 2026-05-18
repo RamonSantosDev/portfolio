@@ -10,6 +10,9 @@
     --cor3:#000000;
     --cor4:#0C4907;
     --cor5:#e0b39873;
+    --cor6:#474644;
+    --cor7:#FBBC9A;
+    --cor8:#FDDBC9;
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
@@ -91,50 +94,47 @@ h1{
     font-size: 2.5em;
     font-family: var(--fonte-padrao);
 }
-h1 > span{
-    font-size: 25px;
-    border: 1px solid black;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 50px;
-}
 
-strong{
+
+span.destaque{
     color: var(--cor1);
     font-weight: bold;
 }
-img{
-    max-width: 400px;
+.fotos{
+    max-width: 500px;
     width: 100%;
     height: auto;
     padding: 10px;
 }
 
 
-section > div{
+.hero-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
-div #apresentacao{
+#apresentacao{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
+}
+#apresentacao p {
+    max-width: 410px;    
 }
 
 p{
     font-family: var(--fonte-padrao);
     text-align: justify;
-    max-width: 410px; /* Melhor que width fixo */
     width: 90%; /* Garante margens em telas pequenas */
     padding: 10px;
     line-height: 1.6; /* Aumenta o respiro entre as linhas */
     hyphens: auto;
 }
 
-#apresentacao > a{
+.botao{
     text-align: center;
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
@@ -142,7 +142,10 @@ p{
     margin-top: 30px;
     padding: 10px;
     border-radius: 50px;
-    width: 300px;
+    width: 200px; 
+}
+
+.botao a{
     text-decoration: none;
     color: var(--cor2);
 }
@@ -172,7 +175,7 @@ div#icone > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 5px #f17a35b7;
+    box-shadow: 2px 2px 5px var(--cor1);
     border: 1px solid var(--cor1);
     border-radius: 5px;
     margin: 5px;
@@ -187,65 +190,85 @@ li{
     position: relative;
     width: 100vw;
     height: 50px;
-    background-color: #000000;
-    justify-content: space-between;
+    background-color: var(--cor1);
+
 }
-/*.div-de-cima{
+.div-de-cima{
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    color: #FBBC9A;
-    background-color: #474644;
+    color: var(--cor7);
+    background-color: var(--cor6);
     top: 0;
     bottom: 0;
     width: 100%;     
     height: 100%; 
     transform: rotate(1deg);   
-}*/
+}
 .div-de-cima p{
     max-width: 100vw;
     margin: 0;
-}
-.div-de-baixo{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    position: absolute;
-    color: #FDDBC9;
-    background-color: #F17A34;
-    top: 0;
-    bottom: 0;
-    width: 100%;     
-    height: 100%; 
-    transform: rotate(-1deg); 
-}
-.div-de-baixo p{
-    max-width: 100vw;
-    margin: 0;
-    font-size: 18px;
+    font-size: 19px;
 }
 
-
-section.sobre div{
+.sobre-texto{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
     font-family: var(--fonte-padrao);
     flex-wrap: wrap;
-    background-color: var(--cor5);
-    width: 100%;
     height: auto;
     padding: 50px 20px;
 }
-section.sobre{
+
+.sobre-texto p {
+    max-width: 600px;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor5);
     width: 100%;
-    max-width: 600px; /* Limita a largura para a leitura não ficar cansativa */
     font-size: 1.1em;
-    line-height: 1.6; /* Espaçamento entre linhas profissional */
+    line-height: 1.6; 
+    padding-top: 80px;
 }
 div#icone > div:hover {
-    transform: scale(1.1); /* Dá um leve zoom */
+    transform: scale(1.1);
     transition: 0.3s;
     background-color: var(--cor2);
 }
+.meus-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor5);
+    width: 100%;
+    font-size: 1.1em;
+    line-height: 1.6; 
+    
+}
+.projetos-texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: var(--fonte-padrao);
+    flex-wrap: wrap;
+    height: auto;
+    padding: 50px;
+}
+.projetos-texto p{
+    width: auto;
+    padding-top: 30px;
+}
+
+
+
+
