@@ -28,7 +28,7 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
 }
 /*Cabeçalho*/
@@ -41,8 +41,8 @@ header{
     width: 80%;
     min-height: 70px;
     height: auto;
-    margin-top: 15px;
-    border-radius: 50px;
+    margin: 15px auto 0;
+    border-radius: 90px;
     padding: 0 20px;
 }
 header > a > span{
@@ -102,7 +102,6 @@ span.destaque{
 }
 .fotos{
     max-width: 500px;
-    width: 100%;
     height: auto;
     padding: 10px;
 }
@@ -122,15 +121,15 @@ span.destaque{
     
 }
 #apresentacao p {
-    max-width: 410px;    
+    max-width: 400px;    
 }
 
 p{
     font-family: var(--fonte-padrao);
     text-align: justify;
-    width: 90%; /* Garante margens em telas pequenas */
+    width: 90%; 
     padding: 10px;
-    line-height: 1.6; /* Aumenta o respiro entre as linhas */
+    line-height: 1.6;
     hyphens: auto;
 }
 
@@ -143,12 +142,18 @@ p{
     padding: 10px;
     border-radius: 50px;
     width: 200px; 
+    height: auto;
 }
 
 .botao a{
     text-decoration: none;
     color: var(--cor2);
 }
+.botao:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 
 div.prova > p{
     text-align: center;
@@ -164,11 +169,12 @@ div.prova{
 }
 div#icone{
     display: flex;
+    align-items: center;
 }
 
 div#icone > div > abbr > img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 div#icone > div{
@@ -180,37 +186,38 @@ div#icone > div{
     border-radius: 5px;
     margin: 5px;
     height: 60px;
-    width: 80px;
+    width: 60px;
 }
 li{
     line-height: 2em;
     font-family: var(--fonte-padrao);
 }
 .container{
+    justify-content: center;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 50px;
-    background-color: var(--cor1);
-
-}
-.div-de-cima{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--cor7);
     background-color: var(--cor6);
-    top: 0;
-    bottom: 0;
-    width: 100%;     
-    height: 100%; 
-    transform: rotate(1deg);   
+    overflow: hidden;
 }
-.div-de-cima p{
-    max-width: 100vw;
-    margin: 0;
-    font-size: 19px;
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker p{
+    font-size: 20px;
+    color: var(--cor7);
+    padding-right: 50px;
+    width: auto;
+    
+}
+
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 .sobre-texto{
@@ -233,6 +240,7 @@ li{
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--cor5);
+    flex-wrap: wrap;
     width: 100%;
     font-size: 1.1em;
     line-height: 1.6; 
@@ -248,7 +256,7 @@ div#icone > div:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     width: 100%;
     font-size: 1.1em;
     line-height: 1.6; 
@@ -269,6 +277,38 @@ div#icone > div:hover {
     padding-top: 30px;
 }
 
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 380px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projeto img{
+    width: 350px;
+    border-radius: 3px;
+    padding: 5px;
+}
 
 
