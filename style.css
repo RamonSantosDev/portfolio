@@ -358,6 +358,7 @@ div#icone > div:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     font-family: var(--fonte-padrao);
     
 }
@@ -371,6 +372,7 @@ div#icone > div:hover {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     max-width: 100%;
 }
 .icone{
