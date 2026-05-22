@@ -25,6 +25,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -90,7 +93,7 @@ nav > a:hover {
 /*seção 1*/
 h1{
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     font-size: 2.5em;
     font-family: var(--fonte-padrao);
 }
@@ -101,9 +104,8 @@ span.destaque{
     font-weight: bold;
 }
 .fotos{
-    max-width: 500px;
-    height: auto;
-    padding: 10px;
+    width: 500px;
+    height: 500px;
 }
 
 
@@ -112,7 +114,7 @@ span.destaque{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    gap: 30px;
 }
 #apresentacao{
     display: flex;
@@ -121,12 +123,14 @@ span.destaque{
     
 }
 #apresentacao p {
-    max-width: 400px;    
+    width: 400px; 
+    font-family: var(--fonte-padrao);
+    font-size: 18px;   
 }
 
 p{
     font-family: var(--fonte-padrao);
-    text-align: justify;
+    text-align: left;
     width: 90%; 
     padding: 10px;
     line-height: 1.6;
@@ -137,7 +141,6 @@ p{
     text-align: center;
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
-    margin: auto;
     margin-top: 30px;
     padding: 10px;
     border-radius: 50px;
@@ -156,15 +159,18 @@ p{
 
 
 div.prova > p{
-    text-align: center;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    width: 400px;
+
 }
 
-div.prova{
-    width: 400px;
+.prova{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 400px;
     
 }
 div#icone{
@@ -228,7 +234,11 @@ li{
     font-family: var(--fonte-padrao);
     flex-wrap: wrap;
     height: auto;
-    padding: 50px 20px;
+    padding: 80px
+}
+.sobre-texto h2{
+    font-size: 40px;
+    padding-bottom: 30px;
 }
 
 .sobre-texto p {
@@ -244,7 +254,7 @@ li{
     width: 100%;
     font-size: 1.1em;
     line-height: 1.6; 
-    padding-top: 80px;
+    padding-top: 80px
 }
 div#icone > div:hover {
     transform: scale(1.1);
@@ -262,6 +272,10 @@ div#icone > div:hover {
     line-height: 1.6; 
     
 }
+.projetos-texto h2{
+    font-size: 40px;
+}
+
 .projetos-texto{
     display: flex;
     align-items: center;
@@ -310,5 +324,143 @@ div#icone > div:hover {
     border-radius: 3px;
     padding: 5px;
 }
-
-
+.botaomais{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    margin: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 400px; 
+    height: auto;
+    font-size: 20px;
+}
+.botaomais a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+.botaomais:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.verprojeto a{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor1);
+    text-decoration: none;
+}
+.contato{
+    height: 750px;
+    background-color: var(--cor5);
+}
+.containe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    
+}
+.containe h2{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    font-size: 40px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+}
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor1);
+    width: 80px;
+    height: 80px;
+    border-radius: 180px;
+    margin-bottom: 10px;
+}
+.icone img{
+    width: 60px;
+    height: 60px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+}
+.email p{
+    text-align: center;
+    margin: 10px;
+}
+.email a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+.email:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.telefone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+    
+}
+.telefone p{
+    text-align: center;
+    margin: 10px;
+}
+.telefone a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+.telefone:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.linkedin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+}
+.linkedin p{
+    text-align: center;
+    margin: 10px;
+}
+.linkedin a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+.linkedin:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+}
+.github p{
+    text-align: center;
+    margin: 10px;
+}
+.github a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+.github:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
