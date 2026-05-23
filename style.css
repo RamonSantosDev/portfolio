@@ -37,63 +37,42 @@ body{
 /*Cabeçalho*/
 header{
     display: flex;
+    position: fixed;
     flex-wrap: wrap;
-    background-color: var(--cor0);
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    min-height: 70px;
-    height: auto;
-    margin: 15px auto 0;
-    border-radius: 90px;
-    padding: 0 20px;
-}
-header > a > span{
-    font-family: var(--fonte-logo);
-    color: var(--cor1);
-}
-header > a{
-    font-size: 20px;
+    flex-direction: column;
+    background-color: var(--cor1);
     font-family: var(--fonte-padrao);
-    color: var(--cor2);
-    text-decoration: none;
-    padding: 20px;
+    width: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
 }
+
 nav{
     display: flex;
+    flex-direction: column;
+    justify-content: left;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
 }
 nav > a{
-    font-size: 20px;
-    font-family: var(--fonte-padrao);
-    color: var(--cor2);
+    font-size: 18px;
+    color: var(--cor3);
     text-decoration: none;
     padding: 10px;
 }
 nav > a:hover {    
     color: var(--cor1);
     border-radius: 5px;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
-.btcontato > a{
-    font-size: 20px;
-    font-family: var(--fonte-padrao);
-    color: var(--cor3);
-    background-color: var(--cor2);
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 50px;
-    font-weight: bold;
-}
-.btcontato a:hover{
-    color: var(--cor1);
-}
+
 
 /*seção 1*/
 h1{
     text-align: center;
-    padding: 0px;
+    padding: 50px;
     font-size: 2.5em;
     font-family: var(--fonte-padrao);
 }
@@ -144,6 +123,7 @@ p{
     margin-top: 30px;
     padding: 10px;
     border-radius: 50px;
+    border: 1px solid black;
     width: 200px; 
     height: auto;
 }
@@ -328,17 +308,16 @@ div#icone > div:hover {
     text-align: center;
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
+    color: var(--cor2);
     margin: 30px;
     padding: 10px;
     border-radius: 50px;
+    border-color: var(--cor3);
     width: 400px; 
     height: auto;
     font-size: 20px;
 }
-.botaomais a{
-    text-decoration: none;
-    color: var(--cor2);
-}
+
 .botaomais:hover{
     transform: scale(1.1);
     transition: 0.3s;
@@ -380,14 +359,14 @@ div#icone > div:hover {
     align-items: center;
     justify-content: center;
     background-color: var(--cor1);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 180px;
     margin-bottom: 10px;
 }
 .icone img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 .email{
     display: flex;
@@ -465,4 +444,11 @@ div#icone > div:hover {
 .github:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
