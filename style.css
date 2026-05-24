@@ -451,7 +451,7 @@ div#icone > div:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .icone{
