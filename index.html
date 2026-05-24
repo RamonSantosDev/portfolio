@@ -9,11 +9,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        
+        <nav class="nav">
+            <button class="menu-btn">☰</button>
 
             <a href="#inicio">Inicio</a>
             <a href="#sobre">Sobre</a>
-            <a href="#meusprojetos">Projetos</a>
+            <a href="#meus-projetos">Projetos</a>
             <a href="#contato">Contato</a>
 
         </nav>            
@@ -25,14 +27,26 @@
                 <div class="hero-content">
                     <div id="apresentacao">
                         <p>
-                           Olá, sou o Ramon. Desenvolvedor Front-End focado em construir aplicações web modernas, intuitivas e totalmente responsivas. Atualmente cursando Análise e Desenvolvimento de Sistemas.
+                           Desenvolvedor Front-End focado em construir aplicações web modernas, intuitivas e totalmente responsivas. Atualmente cursando Análise e Desenvolvimento de Sistemas.
                         </p>
                         
                         
                         <div class="botao">
                             <a href="assets/resume/Curriculo.pdf" target="_blank" rel="noopener noreferrer">Download CV</a> 
                         </div>
-
+                        <div class="box">
+                            <div class="icone">
+                                <a href="https://github.com/RamonSantosDev" target="_blank" rel="noopener noreferrer">
+                                    <img src="imagens/github.png" alt="github">
+                                </a>
+                            </div>
+                            <div class="icone">
+                                <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" target="_blank" rel="noopener noreferrer"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                            </div>
+                            <div class="icone">
+                                <a href="https://www.instagram.com/ramondev.santos/" target="_blank" rel="noopener noreferrer"><img src="imagens/instagram.png" alt="instagram"></a>
+                            </div>
+                        </div>
                     </div>
                     
                     
@@ -77,11 +91,11 @@
                 </div>
             </div>
 
-            <section class="sobre">
+            <section id="sobre">
                 <div class="fotos">
                     <img src="imagens/foto2.png" alt="perfil">
                 </div>
-                <div class="sobre-texto" id="sobre">
+                <div class="sobre-texto">
                     <h2>Sobre mim</h2>
                     <p>
                         Minha jornada no desenvolvimento de software começou com a curiosidade de entender como as interfaces digitais se conectam com as pessoas. Essa busca por respostas me levou à graduação em Análise e Desenvolvimento de Sistemas, onde transformei o interesse técnico em disciplina de engenharia.
@@ -98,95 +112,101 @@
                     </div>
                 </div>
             </section>
-        <section class="meus-projetos" id="meusprojetos">
+        <section class="meus-projetos" id="meus-projetos">
             <div class="projetos-texto">
                 <h2>
                     Meus <span class="destaque">Projetos</span>
                 </h2>
-                <p>
-                    Projetos que transformei em soluções reais através da lógica e da programação.
-                </p>
+                
             </div>
             <div class="projetos">
-                <div class="projeto">
-                    <img src="imagens/projeto1.png" alt="nome do projeto">
-                    <h3>
-                        Projeto Android
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore quod ab earum quos sunt fugit, incidunt omnis consequatur facere, nulla numquam odit! Doloremque nemo est suscipit explicabo!
-                    </p>
-                    <div class="verprojeto">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="imagens/projeto2.png" alt="nome do projeto">
-                    <h3>
-                        Nome do Projeto
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed consequatur nesciunt dolores consequuntur, veritatis earum facere, minus accusantium a rem, et vero modi veniam maiores odit recusandae iusto soluta.
-                    </p>
-                    <div class="verprojeto">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a> 
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="imagens/projeto3.png" alt="nome do projeto">
-                    <h3>
-                        Nome do Projeto
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptate facere aut natus quas ipsa eos nam cupiditate, officiis, aliquam corporis iste molestiae maxime aspernatur eveniet magnam fuga magni! Odio?
-                    </p>
-                    <div class="verprojeto">
-                        <a href="#" target="_blank" rel="noopener noreferrer" >Ver projeto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects hidden">
-                <div class="projetos">
+                <h3>Destaques</h3>
+                <div class="cards-projetos">
                     <div class="projeto">
-                        <img src="imagens/projeto4.png" alt="nome do projeto">
+                        <img src="imagens/em-breve.png" alt="nome do projeto">
+                       
                         <h3>
-                            Projeto Android
+                            Nome do Projeto
+                        </h3>
+                        
+                        
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore 
+                        </p>
+                        
+                        <div class="verprojeto">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/em-breve.png" alt="nome do projeto">
+                        <h3>
+                            Nome do Projeto
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore quod ab earum quos sunt fugit, incidunt omnis consequatur facere, nulla numquam odit! Doloremque nemo est suscipit explicabo!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
                         </p>
                         <div class="verprojeto">
                             <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
                         </div>
                     </div>
                     <div class="projeto">
-                        <img src="imagens/projeto5.png" alt="nome do projeto">
+                        <img src="imagens/em-breve.png" alt="nome do projeto">
                         <h3>
                             Nome do Projeto
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed consequatur nesciunt dolores consequuntur, veritatis earum facere, minus accusantium a rem, et vero modi veniam maiores odit recusandae iusto soluta.
-                        </p>
-                        <div class="verprojeto">
-                            <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                        </div>
-                    </div>
-                    <div class="projeto">
-                        <img src="imagens/projeto6.png" alt="nome do projeto">
-                        <h3>
-                            Nome do Projeto
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptate facere aut natus quas ipsa eos nam cupiditate, officiis, aliquam corporis iste molestiae maxime aspernatur eveniet magnam fuga magni! Odio?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
                         </p>
                         <div class="verprojeto">
                             <a href="#" target="_blank" rel="noopener noreferrer" >Ver projeto</a>
                         </div>
                     </div>
+                                </div>
                 </div>
-                </div>
-                    <button class="botaomais">Ver mais projetos</button>
-                </div>
+            <div class="projects hidden">
+                    <h3>Todos os projetos</h3>
+                    <div class="projetos">
+                        <div class="projeto">
+                            <img src="imagens/em-breve.png" alt="nome do projeto">
+                            <h3>
+                                Nome do Projeto
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
+                            </p>
+                            <div class="verprojeto">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                            </div>
+                        </div>
+                        <div class="projeto">
+                            <img src="imagens/em-breve.png" alt="nome do projeto">
+                            <h3>
+                                Nome do Projeto
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
+                            </p>
+                            <div class="verprojeto">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                            </div>
+                        </div>
+                        <div class="projeto">
+                            <img src="imagens/em-breve.png" alt="nome do projeto">
+                            <h3>
+                                Nome do Projeto
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
+                            </p>
+                            <div class="verprojeto">
+                                <a href="#" target="_blank" rel="noopener noreferrer" >Ver projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                        <button class="botaomais">Ver mais projetos</button>
+                    </div>
         </section>
         <section class="contato" id="contato">
             <div class="containe">
