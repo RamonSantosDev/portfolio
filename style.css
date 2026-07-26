@@ -370,12 +370,20 @@ div#icone > div:hover {
     flex-wrap: wrap;
     gap: 10px;
 }
-.imagem{
+#imagem1{
     width: 100%;
     height: 250px;
     overflow: hidden;
     border-radius: 10px;
     background: url('imagens/projeto1.png') no-repeat center center;
+    background-size: cover;
+}
+#imagem2{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url('imagens/em-breve.png') no-repeat center center;
     background-size: cover;
 }
 
