@@ -386,6 +386,38 @@ div#icone > div:hover {
     background: url('imagens/em-breve.png') no-repeat center center;
     background-size: cover;
 }
+#imagem3{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url('imagens/em-breve.png') no-repeat center center;
+    background-size: cover;
+}
+#imagem4{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url('imagens/em-breve.png') no-repeat center center;
+    background-size: cover;
+}
+#imagem5{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url('imagens/em-breve.png') no-repeat center center;
+    background-size: cover;
+}
+#imagem6{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url('imagens/em-breve.png') no-repeat center center;
+    background-size: cover;
+}
 
 .projects{
     display: flex;
@@ -562,4 +594,19 @@ div#icone > div:hover {
 .github:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+
+/* EFEITO DE REVELAÇÃO NO SCROLL */
+.scroll-oculto {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    visibility: hidden; /* Evita foco em links invisíveis */
+}
+
+.scroll-oculto.revelar {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
