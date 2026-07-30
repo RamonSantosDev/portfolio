@@ -377,7 +377,7 @@ div#icone > div:hover {
     border-radius: 10px;
     padding: 15px;
     max-width: 380px;
-    height: 500px;
+    height: 550px;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -638,6 +638,10 @@ div#icone > div:hover {
     .contato{
         height: auto;
         background-color: var(--cor5);
+    }
+    .sobre-texto{
+        padding: 20px;
+
     }
     
 }
