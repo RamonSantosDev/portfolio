@@ -456,24 +456,30 @@ section.content-section {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(140deg,#4b3936,#191919);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #191919;
+
+    border: 1px solid transparent;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
     
 }
 .project-media:hover{
-    box-shadow: 0 10px 30px rgba(179, 38, 30, 0.15);
-    border: 1px solid var(--cor-borda);
+    box-shadow: 0 10px 30px rgba(179, 38, 30, 0.25);
+    border-color: var(--cor-borda);
 }
 
 .project-finanx {
-    background-image: url(../portfolio/imagens/ProjetoFinance.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url("./imagens/ProjetoFinance.png");
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
 
-    transition: background-position 5s ease-in-out;
+    transition:
+        background-position 5s ease-in-out,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+.project-finanx:hover {
+    background-position: center bottom;
 }
 
 .project-media .project-placeholder {
