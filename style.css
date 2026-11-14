@@ -449,6 +449,16 @@ section.content-section {
     background: var(--cor-superficie);
     overflow: hidden;
     margin-bottom: 20px;
+
+    transition: 
+        box-shadow 0.5s ease,
+        border-color 0.4s ease;
+    ;
+}
+
+.project-card:hover{
+    box-shadow: 0 10px 30px rgba(179, 38, 30, 0.35);
+    border-color: #B3261E;
 }
 
 .project-media {
@@ -462,24 +472,22 @@ section.content-section {
     transition: box-shadow 0.4s ease, border-color 0.4s ease;
     
 }
-.project-media:hover{
-    box-shadow: 0 10px 30px rgba(179, 38, 30, 0.25);
-    border-color: var(--cor-borda);
-}
 
 .project-finanx {
     background-image: url("./imagens/ProjetoFinance.png");
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 
     transition:
+        background-size 3s ease,
         background-position 5s ease-in-out,
-        box-shadow 0.4s ease,
-        border-color 0.4s ease;
+        
 }
 .project-finanx:hover {
+    background-size: 120% auto;
     background-position: center bottom;
+  
 }
 
 .project-media .project-placeholder {
@@ -526,13 +534,26 @@ section.content-section {
 }
 
 .availability {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border: 1px solid var(--cor-borda);
     border-radius: 100px;
     padding: 9px 15px;
     font-size: .78rem;
     color: var(--cor-texto-secundario);
+    width: 275px;
     margin-top: 16px;
+}
+
+.availability::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--cor-glow);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(179, 38, 30, 0.7);
+    flex-shrink: 0;
 }
 
 .contact-grid {
