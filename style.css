@@ -76,7 +76,7 @@ a:focus-visible,button:focus-visible {
     left: 0;
     z-index: 100;
     width: 0;
-    background: var(--cor-texto);
+    background: var(--cor-glow);
     box-shadow: 0 0 12px var(--cor-glow);
 }
 
