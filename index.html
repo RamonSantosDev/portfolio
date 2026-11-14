@@ -1,319 +1,445 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header>
-        
-        <nav class="nav">
-            <button class="menu-btn">☰</button>
-
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#meus-projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-
-        </nav>            
-    </header>
-
-    <main>
-        <section id="inicio" class="scroll-oculto">
-                <h1><span>Olá</span> <br> Sou <span class="destaque">Ramon</span> <br>Desenvolvedor de Software</h1>
-                <div class="hero-content">
-                    <div id="apresentacao">
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width,initial-scale=1" name="viewport"/>
+        <meta content="#1C1C1C" name="theme-color"/>
+        <meta content="Ramon Nascimento — Desenvolvedor Web e estudante de Análise e Desenvolvimento de Sistemas. Conheça meus projetos e habilidades." name="description"/>
+        <title>
+            Ramon Nascimento | Desenvolvedor Web
+        </title>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#inicio">
+            Ir para o conteúdo
+        </a>
+        <div aria-hidden="true" class="progress" id="progress">
+        </div>
+        <header id="header">
+            <nav aria-label="Navegação principal" class="nav container">
+                <a class="logo" href="#inicio">
+                    Ramon
+                    <span>
+                        .dev
+                    </span>
+                </a>
+                <button aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" id="menuToggle">
+                    ☰
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#inicio">
+                        Início
+                    </a>
+                    <a href="#sobre">
+                        Sobre
+                    </a>
+                    <a href="#habilidades">
+                        Habilidades
+                    </a>
+                    <a href="#projetos">
+                        Projetos
+                    </a>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="inicio">
+                <div class="hero-glow" data-parallax="0.12">
+                </div>
+                <div class="hero-lines" data-parallax="0.05">
+                </div>
+                <div class="container hero-grid">
+                    <div class="hero-copy" data-parallax="0.07">
+                        <div class="eyebrow">
+                            Portfólio / Desenvolvedor Web
+                        </div>
+                        <h1>
+                            Olá, eu sou Ramon.
+                            <span>
+                                Desenvolvedor Web
+                            </span>
+                        </h1>
                         <p>
-                           Desenvolvedor Front-End focado em construir aplicações web modernas, intuitivas e totalmente responsivas. Atualmente cursando Análise e Desenvolvimento de Sistemas.
+                            Desenvolvedor Front-End e estudante de Análise e Desenvolvimento de Sistemas, focado em criar interfaces modernas, funcionais e responsivas.
                         </p>
-                        
-                        
-                        <div class="botao">
-                            <a href="assets/resume/Curriculo.pdf" target="_blank" rel="noopener noreferrer">Download CV</a> 
+                        <div class="actions">
+                            <a class="btn btn-primary" href="#projetos">
+                                Ver projetos ↗
+                            </a>
+                            <a class="btn btn-outline" download="Curriculo_Ramon_Nascimento.pdf" href="assets/resume/Curriculo.pdf" id="cvLink">
+                                Download CV ↓
+                            </a>
                         </div>
-                        <div class="box">
-                            <div class="icone">
-                                <a href="https://github.com/RamonSantosDev" target="_blank" rel="noopener noreferrer">
-                                    <img src="imagens/github.png" alt="github">
-                                </a>
-                            </div>
-                            <div class="icone">
-                                <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" target="_blank" rel="noopener noreferrer"><img src="imagens/linkedin.png" alt="linkedin"></a>
-                            </div>
-                            <div class="icone">
-                                <a href="https://www.instagram.com/ramondev.santos/" target="_blank" rel="noopener noreferrer"><img src="imagens/instagram.png" alt="instagram"></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="fotos">
-                    </div>
-                    
-                    <div class="prova">
-                        <ul>
-                            <li>Projetos Práticos</li>
-                            <li>Aprendizado Contínuo</li>
-                            <li>HTML • CSS • JavaScript • Python</li>
-                        </ul>
-                         
-                        <div id="icone">
-                            <div>
-                                <abbr title="HTML"><img src="imagens/html.png" alt="HTML"></abbr>
-                            </div>
-                            <div>
-                                <abbr title="CSS"><img src="imagens/css.png" alt="CSS"></abbr>
-                            </div>
-                            <div>
-                                <abbr title="JavaScript"><img src="imagens/javascript.png" alt="JavaScript"></abbr>
-                            </div>
-                            <div>
-                                <abbr title="Python"><img src="imagens/python.webp" alt="Python"></abbr>
-                            </div>
+                        <div class="socials">
+                            <a href="https://github.com/RamonSantosDev" rel="noopener noreferrer" target="_blank">
+                                GitHub ↗
+                            </a>
+                            <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" rel="noopener noreferrer" target="_blank">
+                                LinkedIn ↗
+                            </a>
+                            <a href="mailto:ramon.dev.rs@gmail.com">
+                                E-mail ↗
+                            </a>
                         </div>
                     </div>
-                    
-                        
-                    
+                    <div class="portrait-wrap" data-parallax="0.17">
+                        <div class="portrait-halo">
+                        </div>
+                        <div class="portrait" id="portrait">
+                            <span class="initials">
+                                
+                            </span>
+                            <small>
+                                <img src="imagens/foto1.png" alt="">
+                            </small>
+                        </div>
+                    </div>
                 </div>
-        </section>
-
-            <div class="container">
-                <div class="ticker">
-                    <p>HTML5 ★ CSS ★ JavaScript ★ Python ★ HTML5 ★ CSS ★ JavaScript ★ Python ★</p>
-                    <p>HTML5 ★ CSS ★ JavaScript ★ Python ★ HTML5 ★ CSS ★ JavaScript ★ Python ★</p>
-                    <p>HTML5 ★ CSS ★ JavaScript ★ Python ★ HTML5 ★ CSS ★ JavaScript ★ Python ★</p>
-                    <p>HTML5 ★ CSS ★ JavaScript ★ Python ★ HTML5 ★ CSS ★ JavaScript ★ Python ★</p>
+                <div class="scroll-hint">
+                    Role para explorar ↓
                 </div>
-            </div>
-
-            <section id="sobre" class="scroll-oculto">
-                <div class="fotos2">
-                </div>
-                <div class="sobre-texto">
-                    <h2>Sobre mim</h2>
-                    <p>
-                        Minha jornada no desenvolvimento de software começou com a curiosidade de entender como as interfaces digitais se conectam com as pessoas. Essa busca por respostas me levou à graduação em Análise e Desenvolvimento de Sistemas, onde transformei o interesse técnico em disciplina de engenharia.
-                    </p>
-                    <p>
-                        Hoje, meu foco absoluto é o ecossistema Front-End. Não buildo apenas código; projeto arquiteturas limpas, componentes reutilizáveis e layouts fluidos usando HTML, CSS, JavaScript e frameworks modernos. Minha rotina é guiada pela prática constante e pela resolução de problemas reais.
-                    </p>
-                    <p>
-                        Estou em busca de oportunidades onde eu possa somar ao time com minha dedicação, evoluir ao lado de profissionais experientes e aplicar soluções técnicas que gerem valor real para o produto e para o usuário final.
-                    </p>
-                    <div class="botao">
-                        <a href="https://github.com/RamonSantosDev?tab=repositories" target="_blank" rel="noopener noreferrer">Projetos</a> <!--noopener-Impede que a página aberta consiga acessar a página original
-                            noreferrer-Impede que o navegador envie o “referrer” (origem do clique) para o site de destino.-->
+            </section>
+            <section class="content-section about" id="sobre">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <div class="section-num">
+                            01 — Sobre
+                        </div>
+                        <h2>
+                            Sobre mim
+                        </h2>
+                    </div>
+                    <div class="about-layout">
+                        <div class="about-copy reveal">
+                            <p>
+                                Minha jornada no desenvolvimento de software começou com a curiosidade de entender como as interfaces digitais funcionam e se conectam com as pessoas.
+                            </p>
+                            <p>
+                                Atualmente curso Análise e Desenvolvimento de Sistemas, aprofundando meus conhecimentos em programação, desenvolvimento web e boas práticas de desenvolvimento.
+                            </p>
+                            <p>
+                                Meu foco é construir aplicações modernas, responsivas e intuitivas, transformando ideias em soluções digitais.
+                            </p>
+                            <p>
+                                Estou em busca de oportunidades para aplicar minhas habilidades, aprender com profissionais experientes e contribuir para projetos reais.
+                            </p>
+                        </div>
+                        <div class="about-cards">
+                            <article class="info-card reveal">
+                                <h3>
+                                    Estudante de ADS
+                                </h3>
+                                <p>
+                                    Graduação em Análise e Desenvolvimento de Sistemas em andamento.
+                                </p>
+                            </article>
+                            <article class="info-card reveal">
+                                <h3>
+                                    Desenvolvimento Front-End
+                                </h3>
+                                <p>
+                                    Interfaces construídas com HTML, CSS e JavaScript.
+                                </p>
+                            </article>
+                            <article class="info-card reveal">
+                                <h3>
+                                    Projetos práticos
+                                </h3>
+                                <p>
+                                    Habilidades aplicadas em projetos pessoais e trabalhos para clientes.
+                                </p>
+                            </article>
+                            <article class="info-card reveal">
+                                <h3>
+                                    Aprendizado contínuo
+                                </h3>
+                                <p>
+                                    Estudo constante de boas práticas e novas tecnologias.
+                                </p>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </section>
-
-        <section class="meus-projetos" id="meus-projetos" class="scroll-oculto">
-            <div class="projetos-texto">
-                <h2>
-                    Meus <span class="destaque">Projetos</span>
-                </h2>
-                
-            </div>
-            <div class="projetos">
-                <h3>Destaques</h3>
-                <div class="cards-projetos">
-                    <div class="projeto">
-                        <div id="imagem1">
-
+            <section class="content-section" id="habilidades">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <div class="section-num">
+                            02 — Habilidades
                         </div>
-                       
-                        <h3>
-                            FinanX Landing Page
-                        </h3>
-                        
-                        
+                        <h2>
+                            Habilidades
+                        </h2>
                         <p>
-                           Landing page moderna e responsiva voltada para a conversão e captação de clientes de crédito financeiro.
+                            Tecnologias que utilizo no dia a dia de estudo e desenvolvimento.
                         </p>
-                        
-                        <div class="verprojeto">
-                            <a href="https://ramonsantosdev.github.io/Finance/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                        </div>
                     </div>
-                    <div class="projeto">
-                        <div id="imagem2">
-
+                    <div class="skills-grid">
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                </>
+                            </span>
+                            <div>
+                                <h3>
+                                    HTML5
+                                </h3>
+                                <p>
+                                    Estrutura semântica
+                                </p>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                #
+                            </span>
+                            <div>
+                                <h3>
+                                    CSS3
+                                </h3>
+                                <p>
+                                    Layout responsivo
+                                </p>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                JS
+                            </span>
+                            <div>
+                                <h3>
+                                    JavaScript
+                                </h3>
+                                <p>
+                                    Interatividade
+                                </p>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                Py
+                            </span>
+                            <div>
+                                <h3>
+                                    Python
+                                </h3>
+                                <p>
+                                    Lógica e automação
+                                </p>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                ⑂
+                            </span>
+                            <div>
+                                <h3>
+                                    Git
+                                </h3>
+                                <p>
+                                    Controle de versão
+                                </p>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-icon">
+                                GH
+                            </span>
+                            <div>
+                                <h3>
+                                    GitHub
+                                </h3>
+                                <p>
+                                    Versionamento e portfólio
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section projects" id="projetos">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <div class="section-num">
+                            03 — Projetos
                         </div>
-                        <h3>
-                            Nome do Projeto
-                        </h3>
+                        <h2>
+                            Projetos em destaque
+                        </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
+                            Trabalhos autorais e estudos aplicados. Novos projetos são adicionados conforme evoluem.
                         </p>
-                        <div class="verprojeto">
-                            <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                        </div>
                     </div>
-                    <div class="projeto">
-                        <div id="imagem3">
-
+                    <article class="project-card reveal">
+                        <div class="project-media">
+                            <div class="project-placeholder" data-project-parallax="">
+                                FinanX
+                            </div>
                         </div>
-                        <h3>
-                            Nome do Projeto
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
-                        </p>
-                        <div class="verprojeto">
-                            <a href="#" target="_blank" rel="noopener noreferrer" >Ver projeto</a>
+                        <div class="project-content">
+                            <span class="tag">
+                                Landing page
+                            </span>
+                            <h3>
+                                FinanX — Landing Page
+                            </h3>
+                            <p>
+                                Landing page moderna e responsiva para apresentação de serviços financeiros, desenvolvida com foco em experiência do usuário e conversão.
+                            </p>
+                            <a class="btn btn-outline" href="https://ramonsantosdev.github.io/Finance/" rel="noopener noreferrer" target="_blank">
+                                Ver projeto ↗
+                            </a>
                         </div>
-                    </div>
+                    </article>
+                    <div class="extra-projects" hidden="" id="extraProjects">
+                        <article class="project-card">
+                            <div class="project-media">
+                                <div class="project-placeholder">
+                                    Em breve
                                 </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="tag">
+                                    Próximo projeto
+                                </span>
+                                <h3>
+                                    Novidades em breve
+                                </h3>
+                                <p>
+                                    Este espaço está reservado para um próximo projeto real.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="more-wrap">
+                        <button aria-controls="extraProjects" aria-expanded="false" class="btn btn-outline" id="moreProjects">
+                            Ver mais projetos ↓
+                        </button>
+                    </div>
                 </div>
-            <div class="projects hidden">
-                    <h3>Todos os projetos</h3>
-                    <div class="projetos">
-                        <div class="projeto">
-                            <div id="imagem4">
-
-                            </div>
-                            <h3>
-                                Nome do Projeto
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
-                            </p>
-                            <div class="verprojeto">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                            </div>
+            </section>
+            <section class="content-section" id="contato">
+                <div class="container contact-layout">
+                    <div class="section-head reveal">
+                        <div class="section-num">
+                            04 — Contato
                         </div>
-                        <div class="projeto">
-                            <div id="imagem5">
-
-                            </div>
-                            <h3>
-                                Nome do Projeto
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
-                            </p>
-                            <div class="verprojeto">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
-                            </div>
-                        </div>
-                        <div class="projeto">
-                            <div id="imagem6">
-
-                            </div>
-                            <h3>
-                                Nome do Projeto
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veniam vel labore
-                            </p>
-                            <div class="verprojeto">
-                                <a href="#" target="_blank" rel="noopener noreferrer" >Ver projeto</a>
-                            </div>
+                        <h2>
+                            Vamos construir algo juntos?
+                        </h2>
+                        <p>
+                            Estou aberto a oportunidades profissionais, novos desafios e conexões na área de tecnologia. Vamos conversar sobre como posso contribuir para seu próximo projeto.
+                        </p>
+                        <span class="availability">
+                            ● Disponível para estágio e vaga júnior
+                        </span>
+                    </div>
+                    <div class="contact-grid">
+                        <a class="contact-card reveal" href="mailto:ramon.dev.rs@gmail.com">
+                            <strong>
+                                E-mail ↗
+                            </strong>
+                            <span>
+                                ramon.dev.rs@gmail.com
+                            </span>
+                        </a>
+                        <a class="contact-card reveal" href="https://github.com/RamonSantosDev" rel="noopener noreferrer" target="_blank">
+                            <strong>
+                                GitHub ↗
+                            </strong>
+                            <span>
+                                RamonSantosDev
+                            </span>
+                        </a>
+                        <a class="contact-card reveal" href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" rel="noopener noreferrer" target="_blank">
+                            <strong>
+                                LinkedIn ↗
+                            </strong>
+                            <span>
+                                Ramon Nascimento
+                            </span>
+                        </a>
+                        <div class="contact-card disabled reveal">
+                            <strong>
+                                WhatsApp
+                            </strong>
+                            <span>
+                                Número a configurar
+                            </span>
                         </div>
                     </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <a class="logo" href="#inicio">
+                            Ramon
+                            <span>
+                                .dev
+                            </span>
+                        </a>
+                        <p>
+                            Ramon Nascimento — Desenvolvedor Web e estudante de Análise e Desenvolvimento de Sistemas.
+                        </p>
                     </div>
-                        <button class="botaomais">Ver mais projetos</button>
+                    <div>
+                        <h3>
+                            Navegação
+                        </h3>
+                        <a href="#inicio">
+                            Início
+                        </a>
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+                        <a href="#habilidades">
+                            Habilidades
+                        </a>
+                        <a href="#projetos">
+                            Projetos
+                        </a>
+                        <a href="#contato">
+                            Contato
+                        </a>
                     </div>
-        </section>
-        <section class="contato" id="contato" class="scroll-oculto">
-            <div class="containe">
-                <h2>Contato</h2>
-                <div class="box">
-                    <div class="email">
-                        
-                            <div class="icone">
-                                <a href="mailto:ramon.dev.rs@gmail.com">
-                                    <img src="imagens/e-mail.png" alt="email" target="_blank" rel="noopener noreferrer">
-                                </a>
-                            </div>
-                        
-                    
-                            <div>
-                                <a href="mailto:ramon.dev.rs@gmail.com" target="_blank" rel="noopener noreferrer">
-                                    <h3>E-mail</h3>
-                                </a>
-                            </div>
-                        
-                        
-                            <div>
-                                <a href="mailto:ramon.dev.rs@gmail.com" target="_blank" rel="noopener noreferrer">
-                                    <p>ramon.dev.rs@gmail.com</p>
-                                </a>
-                            </div>
-                        
+                    <div>
+                        <h3>
+                            Redes
+                        </h3>
+                        <a href="https://github.com/RamonSantosDev" rel="noopener noreferrer" target="_blank">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" rel="noopener noreferrer" target="_blank">
+                            LinkedIn
+                        </a>
+                        <a href="mailto:ramon.dev.rs@gmail.com">
+                            E-mail
+                        </a>
                     </div>
-                    <div class="telefone">
-                        
-                            <div class="icone">
-                                <a href="https://wa.me/5579996308241" target="_blank" rel="noopener noreferrer">
-                                    <img src="imagens/telefone.png" alt="telefone">
-                                </a>
-                            </div>
-                        
-                        
-                            <div>
-                                <a href="https://wa.me/5579996308241" target="_blank" rel="noopener noreferrer">
-                                    <h3>Telefone</h3>
-                                </a>
-                            </div>
-                        
-                        
-                            <div>
-                                <a href="https://wa.me/5579996308241" target="_blank" rel="noopener noreferrer">
-                                    <p>(79) 99630-8241</p>
-                                </a>
-                            </div>
-                        
-                    </div>
-                    
-                        <div class="linkedin">
-                            <div class="icone">
-                                <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" target="_blank" rel="noopener noreferrer">
-                                    <img src="imagens/linkedin.png" alt="linkedin">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" target="_blank" rel="noopener noreferrer">
-                                    <h3>Linkedin</h3>
-                                </a>
-                            </div>
-                            
-                            
-                            <div>
-                                <a href="https://www.linkedin.com/in/ramon-nascimento-5863ab383/" target="_blank" rel="noopener noreferrer">
-                                    <p>@ramon-nascimento</p>
-                                </a>
-                            </div>
-                        </div>
-                    
-                    
-                        <div class="github">
-                            <div class="icone">
-                                <a href="https://github.com/RamonSantosDev" target="_blank" rel="noopener noreferrer">
-                                    <img src="imagens/github.png" alt="github">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/RamonSantosDev" target="_blank" rel="noopener noreferrer">
-                                    <h3>Github</h3>
-                                </a>
-                            </div>
-                            
-                            
-                            <div>
-                                <a href="https://github.com/RamonSantosDev" target="_blank" rel="noopener noreferrer">
-                                    <p>@RamonSantosDev</p>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+                <div class="copyright">
+                    <span>
+                        ©
+                        <span id="year">
+                        </span>
+                        Ramon.dev
+                    </span>
+                    <span>
+                        Desenvolvido com dedicação e criatividade.
+                    </span>
                 </div>
             </div>
-        </section>
-    </main>
-<script src="script.js"></script>
-</body>
+        </footer>
+        
+    </body>
 </html>
